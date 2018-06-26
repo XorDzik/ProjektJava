@@ -1,0 +1,99 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+*{
+    -fx-primary: #2A2E37;
+    -fx-secondary: #FFFF8D;
+    -fx-primarytext: #000000;
+    -fx-third: #87CEFA;
+    }
+
+
+
+.root {
+
+
+  -fx-background-color:      -fx-primary;
+  -fx-background-color: linear-gradient(#000000 0%, #2A2E37 25%, #2A2E37 75%, #000000 100%);
+  -fx-background-radius: 20px;
+
+
+
+}
+
+.list-view{
+        -fx-background-color: #2A2E37;
+        -fx-background-color: linear-gradient(#000000 0%, #2A2E37 25%, #2A2E37 75%, #000000 100%);
+        -fx-background-radius: 10px;
+}
+.list-view:hover{
+    -fx-background-color: #2A2E37;
+            -fx-background-color: linear-gradient(#000000 0%, #2A2E37 25%, #2A2E37 75%, #000000 100%);
+}
+.list-cell {
+    -fx-background-color: #2A2E37;
+    -fx-background-color: linear-gradient(#000000 0%, #2A2E37 25%, #2A2E37 75%, #000000 100%);
+    -fx-text-color: white;
+}
+.cell {
+     -fx-text-fill: white;
+}
+
+.button{
+    -fx-border-color: -fx-secondary;
+    -fx-background-color: linear-gradient(#87CEFA,#4169E1) ;
+    -fx-faint-focus-color: #2F4F4F;
+    -fx-text-fill: -fx-primarytext;
+    -fx-border-radius: 60px;
+    -fx-background-radius: 60px;
+    -fx-font: 10 Arial;
+    }
+.button:hover{
+    -fx-background-color: linear-gradient(#87CEFA,#48D1CC);
+}
+
+.slider .track {
+      -fx-background-color:
+          -fx-shadow-highlight-color,
+          linear-gradient(to bottom, derive(-fx-text-box-border, -10%), -fx-text-box-border),
+          linear-gradient(to bottom,
+            derive(-fx-control-inner-background, -9%),
+            derive(-fx-control-inner-background, 0%),
+            derive(-fx-control-inner-background, -5%),
+            derive(-fx-control-inner-background, -12%)
+          );
+    -fx-background-insets: 0 0 -1 0, 0, 1;
+    -fx-background-radius: 0.25em, 0.25em, 0.166667em; /* 3 3 2 */
+    -fx-padding: 0.25em; /* 3 */
+}
+
+.slider .track {
+    -fx-pref-height:10;
+}
+
+.slider:vertical .track {
+    -fx-pref-width:10;
+}
+
+.label{
+
+    -fx-font-color: "white";
+}
+
+.slider .thumb {
+    -fx-pref-height: 10;
+    -fx-pref-width: 10;
+}
+.text-input:focused {
+    -fx-highlight-text-fill: ladder(
+        -fx-highlight-fill,
+        -fx-light-text-color 45%,
+        -fx-dark-text-color  46%,
+        -fx-dark-text-color  59%,
+        -fx-mid-text-color   60%
+    );
+
+}
+
+.label {
+    -fx-text-fill: white;
+}
